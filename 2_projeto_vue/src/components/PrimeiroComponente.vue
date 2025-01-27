@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1>Olá Vue!</h1>
-        <p>Meu nome é {{nome }} e trabalho como {{ programador }}</p>
+        <p>Meu nome é {{nome }} e trabalho como {{ programador }}.</p>
     </div>
 </template>
 
