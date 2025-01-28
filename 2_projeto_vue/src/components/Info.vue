@@ -10,18 +10,26 @@
             <li>C</li>
         </ul>
         <p v-show="mostrar_email">Mande uma mensagem para: {{ email }}</p>
+        <p>Para acessar meu portfólio, basta <a v-bind:href="meu_link" target="_blank">clicar aqui</a></p>
+        <Picture />
     </div>
 </template>
 
 <script>
+import Picture from './Picture.vue'
 
 export default {
+  components: { Picture },
     name: 'Info',
+    componetns: {
+        Picture
+    },
     data() {
         return {
             esta_trabalhando: false,
             mostrar_email: true,
-            email: 'marllon@gmail.com'
+            email: 'marllon@gmail.com',
+            meu_link: 'https://google.com'
         }
     }
 }
