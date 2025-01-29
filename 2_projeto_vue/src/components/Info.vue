@@ -1,5 +1,7 @@
 <template>
     <div>
+        <p>{{ email }}</p>
+
         <p v-if="esta_trabalhando">Estou trabalhando no momento.</p>
         <p v-else>Estou em busca de novas oportunidades!</p>
 
@@ -34,11 +36,13 @@ export default {
     componetns: {
         Picture
     },
+    props: {
+        email: String,
+        esta_trabalhando: Boolean
+    },
     data() {
         return {
-            esta_trabalhando: false,
             mostrar_email: false,
-            email: 'marllon@gmail.com',
             meu_link: 'https://google.com',
             textoBotao: 'Mostrar e-mail',
             backend_technologies: ['C#', 'PHP', 'Python'],

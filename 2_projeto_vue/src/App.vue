@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header />
+    <Header :esta_logado=false />
     <PrimeiroComponente />
     <p>O dado de app é: {{ testando }}</p>
     <LifeCycle />
